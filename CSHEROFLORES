@@ -1,0 +1,16 @@
+class Hero:
+    def __init__(self, name, hp):
+        self.name = name
+        self.hp = hp
+
+    def take_damage(self, amount):
+        self.hp -= amount
+
+
+Reeayin = Hero("Reeayain", 100)
+Seb = Hero("Seb", 100)
+
+Reeayin.take_damage(10)
+
+print(Reeayin.name, Reeayin.hp)
+print(Seb.name, Seb.hp)
