@@ -7,7 +7,7 @@ class Hero:
         self.hp -= amount
 
 
-Reeayin = Hero("Reeayain", 100)
+Reeayin = Hero("Reeayin", 100)
 Seb = Hero("Seb", 100)
 
 Reeayin.take_damage(10)
