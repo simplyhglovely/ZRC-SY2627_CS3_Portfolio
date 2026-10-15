@@ -1,0 +1,2 @@
+1. The parent class of the Programmer class is Person, since a programmer is a type of person and can inherit common attributes and methods from the Person class.
+2. I would place the Intern class under the Person class because an intern is also a person. This allows the Intern class to inherit common attributes and methods from Person while having its own specific characteristics and responsibilities.
