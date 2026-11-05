@@ -1,0 +1,36 @@
+class Patient:
+    def __init__(self, name, bill):
+        self.name = name
+        self.bill = bill
+
+    def calculate_bill(self):
+        return self.bill
+
+    def display_patient_type(self):
+        print("Patient Type: Regular Patient")
+
+
+class SeniorPatient(Patient):
+    def calculate_bill(self):
+        return self.bill * 0.80
+
+    def display_patient_type(self):
+        print("Patient Type: Senior Citizen")
+
+class PhilhealthPatient(Patient):
+    def calculate_bill(self):
+        return self.bill * 0.90
+
+    def display_patient_type(self):
+        print("Patient Type: PhilHealth Member")
+
+patient1 = Patient("Azi", 1000)
+patient2 = SeniorPatient("Zoe", 1000)
+patient3 = PhilhealthPatient("Venice", 1000)
+
+patients = [patient1, patient2, patient3]
+
+for patient in patients:
+    print("\nPatient Name:", patient.name)
+    patient.display_patient_type()
+    print("Total Bill:", patient.calculate_bill())
