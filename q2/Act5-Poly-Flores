@@ -1,0 +1,5 @@
+1. All the methods (move(), special_move(), and use()) have the same purpose of performing an action when called. They have the same method names across different classes but produce different behaviors depending on the object.
+
+2. This activity shows polymorphism because different game characters and items can use the same method name to perform different actions. For example, a Warrior swings a sword while a Mage casts a spell using the same special_move() method.
+
+3. Other examples include an attack action, where a Warrior attacks using a sword, a Mage uses magic, and an Archer shoots an arrow. Another example is an equip action, where different items provide different equipment effects.
